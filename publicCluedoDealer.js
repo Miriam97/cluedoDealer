@@ -34,8 +34,6 @@ function select3AndRemove() {
   const roomsIndex = Math.floor(Math.random() * rooms.length)
   const weaponsIndex = Math.floor(Math.random() * weapons.length)
 
-  console.log(peopleIndex, roomsIndex, weaponsIndex)
-
   const cardSet = [people[peopleIndex], rooms[roomsIndex], weapons[weaponsIndex]]
 
   removeFromArray(people, peopleIndex);
@@ -58,7 +56,6 @@ function removeFromArray(array, index)
 
 function deal()
 {
-  //GOAL: for each person, create an array of their items, remove those from the list and send it to them
   let totalLength = people.length + rooms.length + weapons.length
   if(totalLength > 0)
   {
@@ -104,8 +101,6 @@ function text(){
          to: players[i].phoneNum
        })
       .then(message => console.log(message.sid)); */
-
-    console.log(players[i].name, players[i].phoneNum, players[i].myCards)
   }
 }
 
