@@ -1,8 +1,6 @@
 # cluedoDealer
 Deals cards and texts out the cards to the players using twilio (you will need to set up an account etc). Also saves the secret envelope locally.  
 
-There is still a fair bit of tidying up etc to do, some of this code can definitely be simplified, but this is the initial working version. 
-
 During lockdown, my friends and I have played Cluedo remotely a couple of times. For us all to be able to play, we've had to get household members to deal the cards and then text each person their cards, and then be available to respond when final guesses are made. I decided this should be a fairly simple problem to solve programmatically. 
 
 One of my friends created this amazing spreadsheet board: https://docs.google.com/spreadsheets/d/1bYe2gyMct3KjD0mELfOJA-IeBsBAwC_86ADLWCjVM7I/edit?usp=sharing to match the content of the game. The different coloured cells can be dragged around the board to play. 
