@@ -7,6 +7,11 @@ One of my friends created this amazing spreadsheet board: https://docs.google.co
 
 We use: http://rolldicewithfriends.com/ to roll dice together for the game. 
 
+# To Run: 
+
+Simply run ``` node cluedoDealer ``` from the location you store the files in. 
+(The use of node has meant that I have had to use require and module.exports instead of imports and exports as I usually would in ES6)
+
 # Twilio: 
 - A twilio account and phone number. 
   A trial account gives you about £12 to use. 
