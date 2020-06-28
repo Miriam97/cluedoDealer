@@ -16,7 +16,8 @@ We use: http://rolldicewithfriends.com/ to roll dice together for the game.
 
 Uncomment this bit in the text() function (just commented for safety to be able to test the rest of the program without spending twilio money).
 
-``` // Download the helper library from https://www.twilio.com/docs/node/install
+``` 
+// Download the helper library from https://www.twilio.com/docs/node/install
     // Your Account Sid and Auth Token from twilio.com/console
     // DANGER! This is insecure. See http://twil.io/secure
     const accountSid = ''; <--- put your Account SID here
@@ -34,7 +35,8 @@ Uncomment this bit in the text() function (just commented for safety to be able 
 
 # Card Arrays
 
-```const people = ['Mustard', 'Plum', 'Green', 'Peacock', 'Scarlet', 'White'];
+```
+const people = ['Mustard', 'Plum', 'Green', 'Peacock', 'Scarlet', 'White'];
    const rooms = ['Hall', 'Dining Room', 'Kitchen', 'Patio', 'Observatory', 'Theatre', 'Living Room', 'Spa', 'Guest House'];
    const weapons = ['Knife', 'Candlestick', 'Pistol', 'Poison', 'Trophy', 'Rope', 'Bat', 'Axe', 'Dumbbell'];
 ```
@@ -42,7 +44,8 @@ I built this based on my friend's version of cluedo which we were attempting to 
 
 # The player array
 
-```const players = [
+```
+const players = [
   {'name': '', 'phoneNum' : '', myCards: []},
   {'name': '', 'phoneNum' : '', myCards: []},
 ]
