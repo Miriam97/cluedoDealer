@@ -14,23 +14,33 @@ We use: http://rolldicewithfriends.com/ to roll dice together for the game.
 - https://www.twilio.com/console: Get Account SID and Auth Token 
 - https://www.twilio.com/docs/libraries/node ```npm install twilio```
 
+
+In constants.js, insert your AuthToken, AccountSID, and twilio number as appropriate here: 
+```
+const twilioNumber = "+";
+const accountSID = "";
+const authToken = "";
+
+```
+
 Uncomment this bit in the text() function (just commented for safety to be able to test the rest of the program without spending twilio money).
 
 ``` 
-// Download the helper library from https://www.twilio.com/docs/node/install
+    /*  // Download the helper library from https://www.twilio.com/docs/node/install
     // Your Account Sid and Auth Token from twilio.com/console
     // DANGER! This is insecure. See http://twil.io/secure
-    const accountSid = ''; <--- put your Account SID here
-    const authToken = '';  <--- Auth token here
-    const client = require('twilio')(accountSid, authToken);
+    const accountSid = accountSID;
+    const authToken = authToken;
+    const client = require("twilio")(accountSid, authToken);
 
     client.messages
       .create({
-         body: JSON.stringify(players[i].myCards),
-         from: '+', <--- put the twilio number in here.
-         to: players[i].phoneNum
-       })
-      .then(message => console.log(message.sid));
+        body: JSON.stringify(players[i].myCards),
+        from: twilioNumber,
+        to: players[i].phoneNum,
+      })
+      .then((message) => console.log(message.sid));
+      */
  ```
 
 # Card Arrays
