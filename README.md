@@ -50,7 +50,7 @@ Uncomment this bit in the text() function (just commented for safety to be able 
    const rooms = ['Hall', 'Dining Room', 'Kitchen', 'Patio', 'Observatory', 'Theatre', 'Living Room', 'Spa', 'Guest House'];
    const weapons = ['Knife', 'Candlestick', 'Pistol', 'Poison', 'Trophy', 'Rope', 'Bat', 'Axe', 'Dumbbell'];
 ```
-I built this based on my friend's version of cluedo which we were attempting to play remotely. It has some cards which differ from the classic set, you can change these to anything appropriate for your game. 
+I built this based on my friend's version of cluedo which we were attempting to play remotely. It has some cards which differ from the classic set, you can change these to anything appropriate for your game in the constants.js file. 
 
 # The player array
 
@@ -58,9 +58,11 @@ I built this based on my friend's version of cluedo which we were attempting to 
 const players = [
   {'name': '', 'phoneNum' : '', myCards: []},
   {'name': '', 'phoneNum' : '', myCards: []},
+  {'name': '', 'phoneNum' : '', myCards: []},
+  {'name': '', 'phoneNum' : '', myCards: []},
 ]
 ```
-In this array of player objects, you can add the names of the players, along with their phone numbers for the cards to be texted to. The myCards arrays will be populated by the program. 
+In this array of player objects in the constants.js file, you can add the names of the players, along with their phone numbers for the cards to be texted to. The myCards arrays will be populated by the program. 
 
 ```console.log(players[i].name, players[i].phoneNum, players[i].myCards)``` 
 You can use this format to access the information for each player within the code. 
