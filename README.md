@@ -46,7 +46,7 @@ Uncomment this bit in the text() function (just commented for safety to be able 
 # Card Arrays
 
 ```
-const people = ['Mustard', 'Plum', 'Green', 'Peacock', 'Scarlet', 'White'];
+   const people = ['Mustard', 'Plum', 'Green', 'Peacock', 'Scarlet', 'White'];
    const rooms = ['Hall', 'Dining Room', 'Kitchen', 'Patio', 'Observatory', 'Theatre', 'Living Room', 'Spa', 'Guest House'];
    const weapons = ['Knife', 'Candlestick', 'Pistol', 'Poison', 'Trophy', 'Rope', 'Bat', 'Axe', 'Dumbbell'];
 ```
